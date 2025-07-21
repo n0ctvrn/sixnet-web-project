@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Six Networks</title>
+        <meta name="viewport" content="width=device-width, initail-scale=1.0">
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body>
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="nav-links" id="mobileMenu">
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Service</li></a>
+                    <a href="#"><li>Contact</li></a>
+                </ul>
+            </div>
+            <img src="img/menu-icon.png" class="menu-icon" onclick="showMenu()">
+        </div>
+        <div class="about-img">
+            <img src="img/tes.jpeg" style="padding-left: 150px;">
+        </div>
+        <script>
+            function showMenu(){
+                var toggle = document.getElementById("mobileMenu");
+                if(toggle.style.height == "0px")
+                {
+                    toggle.style.height = "200px";
+                }
+                else{
+                    toggle.style.height = "0px";
+                }
+            }
+        </script>
+    </body>
+</html>
